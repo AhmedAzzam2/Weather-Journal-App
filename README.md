@@ -15,5 +15,10 @@ and
 
  ![alt text](https://raw.githubusercontent.com/AhmedAzzam2/Weather-Journal-App/main/Screenshot%202021-11-14%20213412.png?raw=true?raw=true)
 
+and
+
 
  ![alt text](https://raw.githubusercontent.com/AhmedAzzam2/Weather-Journal-App/main/Screenshot%202021-11-14%20213529.png?raw=true?raw=true)
+
+and
+ ![alt text](https://github.com/AhmedAzzam2/Weather-Journal-App/blob/main/Screenshot%202021-11-14%20213638.png?raw=true)
