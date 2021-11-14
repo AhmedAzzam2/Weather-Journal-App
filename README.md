@@ -14,3 +14,6 @@ catch error and see in console
 and
 
  ![alt text](https://raw.githubusercontent.com/AhmedAzzam2/Weather-Journal-App/main/Screenshot%202021-11-14%20213412.png?raw=true?raw=true)
+
+
+ ![alt text](https://raw.githubusercontent.com/AhmedAzzam2/Weather-Journal-App/main/Screenshot%202021-11-14%20213529.png?raw=true?raw=true)
