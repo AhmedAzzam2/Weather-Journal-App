@@ -29,27 +29,3 @@ app.listen(port, () => {
 });
 
 
-
-// Require Express to run server and routes
-/**
- * Get All mydata By The: http://localhost:1000/getAll
- */
-app.get('/getAll', (request, response) => {
-    response.send(projectmydata).status(200).end();
-});
-
-
-
-/**
- * Post mydata By The: http://localhost:1000/postmydata
- */
-app.post('/postmydata', (request, response) => {
-    //Post mydata Now
-    projectmydata={
-        temp:request.body.temp,
-        date:request.body.date,
-        content:request.body.content 
-    };
-    response.send(projectmydata).status(404).end();
-});
- 
