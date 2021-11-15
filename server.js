@@ -1,4 +1,4 @@
-const cors = require('cors'); 
+const cors = require('cors');
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -23,9 +23,26 @@ app.use(cors());
 
 // Initialize the main project folder
 app.use(express.static('website'));
- 
+
 app.listen(port, () => {
     console.log(`Server On: http://localhost:${port}`);
 });
 
 
+
+
+app.get('/getAll', (req, res) => {
+    res.send(projectmydata);
+});
+
+
+projectmydata = {
+};
+app.post('/postmydata', (req, res) => {
+    console.log(req.body)
+    projectmydata = req.body,
+        projectmydata.temp = req.body.temp,
+        projectmydata.date = new Date(),
+        projectmydata.feelings = req.body.feelings
+    res.send(projectmydata);
+});
