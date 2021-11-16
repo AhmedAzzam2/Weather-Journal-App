@@ -1,5 +1,5 @@
-let key = '&appid=bb062611c1b330e3d80967d29caa1e90&units=imperial';
-    document.getElementById('generate').addEventListener('click', (e) => {
+const key = '&appid=bb062611c1b330e3d80967d29caa1e90&units=imperial';
+document.getElementById('generate').addEventListener('click', (e) => {
 
     e.preventDefault();
 
@@ -50,7 +50,7 @@ let UL = async () => {
     try {
         res.json().then(mydata => {
             console.log(mydata)
-            document.getElementById('app2').innerHTML += `
+            document.getElementById('app2').innerHTML = `
             <div id = "entryHolder" class="card">
                 <h2 >${mydata.temp.city.name}</h2>
                 <div  class=" med-font">${mydata.temp.list[0].weather[0].description}</div>
@@ -59,7 +59,7 @@ let UL = async () => {
                 <div  id = "content">My Feelings Is: ${mydata.feelings} <span class="sm-font"> </span></div >
             </div>
             `;
-        }).catch(catchErr);
+        })
     } catch (error) {
         catchErr(error);
     }
