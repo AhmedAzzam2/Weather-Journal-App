@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 /** Listen Port */
-const port = 1000;
+const port = 3000;
 
 // Setup empty JS object to act as endpoint for all routes
 projectmydata = {};

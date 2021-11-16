@@ -34,7 +34,7 @@ const getApi = async (zip) => {
 }
 
 let sendMyData = async mydata => {
-    let res = await fetch(`http://localhost:1000/postmydata`, {
+    let res = await fetch(`http://localhost:3000/postmydata`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(mydata),
@@ -46,7 +46,7 @@ let sendMyData = async mydata => {
 }
 
 let UL = async () => {
-    let res = await fetch(`http://localhost:1000/getAll`);
+    let res = await fetch(`http://localhost:3000/getAll`);
     try {
         res.json().then(mydata => {
             console.log(mydata)
